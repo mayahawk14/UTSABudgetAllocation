@@ -1,4 +1,4 @@
-;package budgetdistribution;
+package budgetdistribution;
 
 import java.io.*;
 import java.util.*;
