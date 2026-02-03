@@ -1,4 +1,4 @@
-package proj;
+;package budgetdistribution;
 
 import java.io.*;
 import java.util.*;
@@ -6,26 +6,26 @@ import java.util.*;
 
 public class Driver {
 
-  public static void main(String[] args) throws FileNotFoundException {
+  public static void main(String[] args) {
 
     String fileNames[][] = {{
-      "Department-ComputerScience.txt",
-      "Department-Mathematics.txt",
-      "Department-Chemistry.txt",
-      "Department-PhysicsAndAstronomy.txt"},
+      "./TestCase1/Department-ComputerScience.txt",
+      "./TestCase1/Department-Mathematics.txt",
+      "./TestCase1/Department-Chemistry.txt",
+      "./TestCase1/Department-PhysicsAndAstronomy.txt"},
       {
-      "Department-ComputerScience.txt",
-      "Department-Mathematics.txt",
-      "Department-Chemistry.txt",
-      "Department-PhysicsAndAstronomy.txt"},
+      "./TestCase1/Department-ComputerScience.txt",
+      "./TestCase1/Department-Mathematics.txt",
+      "./TestCase1/Department-Chemistry.txt",
+      "./TestCase1/Department-PhysicsAndAstronomy.txt"},
       {
-      "Department-DeptA.txt",
-      "Department-DeptB.txt",
-      "Department-DeptC.txt",
-      "Department-DeptD.txt",
-      "Department-DeptE.txt",
-      "Department-DeptF.txt",
-      "Department-DeptG.txt"}
+      "./TestCase2/Department-DeptA.txt",
+      "./TestCase2/Department-DeptB.txt",
+      "./TestCase2/Department-DeptC.txt",
+      "./TestCase2/Department-DeptD.txt",
+      "./TestCase2/Department-DeptE.txt",
+      "./TestCase2/Department-DeptF.txt",
+      "./TestCase2/Department-DeptG.txt"}
       };
                                                 
 
@@ -44,7 +44,7 @@ public class Driver {
     
   }
 
-  public static void testFile( String fileNames[], double budget ) throws FileNotFoundException {  
+  public static void testFile( String fileNames[], double budget ) {  
     String budgetString = String.format("$%.2f", budget );
     System.out.println("----------------------------TESTING with budget = " + budgetString + "----------------------------");
     System.out.println("");
@@ -52,6 +52,4 @@ public class Driver {
     ResourceManagement rm = new ResourceManagement(fileNames, budget);
     rm.printSummary();  
   }
-
-
 }
